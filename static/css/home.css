@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: url("../images/background-42.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+#name {
+    color: #f13638;
+    text-align: center;
+    font-size: 3.2em;
+    text-shadow: 2;
+    font-family: 'Kalam', cursive;
+    user-select: none;
+}
+
+#about {
+    color: white;
+    font-size: 1.5em;
+    text-align: center;
+}
+
+#projects_button {
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    position: relative;
+    top: 2em;
+    font-size: 2em;
+    border: 2px solid #f13638;
+    padding: 12px;
+    border-radius: 9px;
+    transition: 0.2s;
+}
+
+#projects_button:hover {
+    color: #f13638;
+    box-shadow: 0px 0px 7px 5px #f13638;
+}
+
+.home-main {
+    position: relative;
+    top: 24vh;
+    font-family: 'Source Code Pro', monospace;
+    margin-left: 5px;
+    text-align: center;
+    margin-right: 5px;
+}
+
+.profiles {
+    display: flex;
+    /* border: 2px solid white; */
+    top: 7.9em;
+    position: relative;
+    margin: auto;
+    width: 55%;
+    justify-content: space-evenly;
+    margin-bottom: 20px;
+}
+
+.profile {
+    color: white;
+    font-size: 3.3em;
+    transition: 0.3s ease;
+}
+
+.profile:hover {
+    color: #f13638;
+    transform: rotate(30deg);
+}
+
+@media screen and (max-width: 400px) {
+    .profiles {
+        /* border: 2px solid greenyellow; */
+        width: auto;
+    }
+}
