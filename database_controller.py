@@ -9,7 +9,7 @@ collection = db["projects"]
 post = {"_id": 0, "name": "Abhijeet", "Score": 5}
 
 # collection.insert_one(post)
-results = collection.find({"name":"Abhijeet"})
+# results = collection.find({"name":"Abhijeet"})
 
 for r in results:
     print(r["name"])
