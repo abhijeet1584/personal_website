@@ -1,4 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Kalam:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
 
 body {
     background: url(../images/background-42.png);
@@ -15,4 +21,69 @@ body {
 
 #project_heading {
     color: white;
+}
+
+.main_container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(1fr);
+    margin: 5px;
+}
+
+.card {
+    border-radius: 5px;
+    height: 300px;
+    width: 1fr;
+    color: white;
+    background: rgba(255, 255, 255, 0.171);
+    text-align: center;
+    margin: 5px;
+}
+
+.description {
+    position: relative;
+    top: 2em;
+    margin-left: 5px;
+    margin-right: 5px;
+    font-family: 'Source Code Pro', monospace;
+}
+
+@media screen and (max-width: 850px) {
+    .main_container {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .main_container {
+        grid-template-columns: 1fr;
+    }
+}
+
+.title {
+    display: inline;
+    font-family: 'Kalam', cursive;
+    transition: 0.2s;
+    color: white;
+    padding-left: 1em;
+    position: relative;
+    top: 0.5em;
+    padding-right: 1em;
+    border: 2px solid #f13638;
+    border-radius: 10px;
+}
+
+.title:hover {
+    cursor: pointer;
+    color: #f13638;
+    box-shadow: 0px 0px 7px 3px #f13638;
+}
+
+.video_container {
+    position: relative;
+    top: 3em;
+}
+
+.repo {
+    text-decoration: none;
 }

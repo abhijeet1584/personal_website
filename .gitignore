@@ -1,2 +1,3 @@
 Procfile
 database_controller.py
+.vscode/settings.json

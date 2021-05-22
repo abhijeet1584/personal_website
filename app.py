@@ -1,4 +1,5 @@
 from flask import Flask, url_for, render_template
+import database_controller
 
 app = Flask(__name__)
 
@@ -13,7 +14,7 @@ def pageNotFound(e):
 
 @app.route('/projects', methods=["GET", "POST"])
 def returnProjects():
-    return render_template("projects.html")
+    return render_template("projects.html", projects=database_controller.getData())
 
 if __name__ == "__main__":
     app.run(port=5500 , debug=True)
